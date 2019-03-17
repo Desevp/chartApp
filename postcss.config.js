@@ -5,6 +5,7 @@ module.exports = {
       extensions : '.pcss',
       plugins    : [require('stylelint')()]
     },
+    'postcss-nested': {},
     'postcss-responsive-type' : {},
     'postcss-preset-env'      : {
       browsers     : '> 0.25%, not dead, not ie 11',

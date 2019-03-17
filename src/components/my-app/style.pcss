@@ -1,21 +1,33 @@
 .Container {
-  display: grid;
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 60em;
-  padding: 24px;
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
 }
 
-.Header {
-  text-align: center;
+.ChartWrapper {
+  position: relative;
 
-  & h1 {
-    margin-bottom: 0;
+  &__Chart {
+    margin-top: 32px;
   }
 }
 
-.Content {
-  margin-top: 56px;
-  display: grid;
-  justify-content: center;
+.Chart {
+  position: relative;
+
+  &__Canvas {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 1px solid  rgb(179, 179, 179);
+  }
+
+  &__Timeline {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    margin-top: 24px;
+    border: 1px solid rgb(179, 179, 179);
+  }
 }
