@@ -34,7 +34,8 @@ module.exports = {
     "max-nested-callbacks": ["error", 2],
     "max-statements": ["error", 15],
     "max-len": ["error", 150],
-    "no-console": "off" // TODO remove for production!
+    "no-console": "off", // TODO remove for production!
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   },
   settings: {
     flowtype: {
